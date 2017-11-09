@@ -1,0 +1,51 @@
+float postion m;
+
+
+
+if corner=top
+{
+	if top
+	m.h=p.x*m.fh;
+	m.y=p.y*m.fy;
+	
+	if down
+	m.h=(pp.h-py)*m.fh;
+    m.y=(pp.h-py)*m.fx;
+     
+}
+
+if corner=left
+{
+	if left
+	m.w=p.x*m.fw;
+    m.x=p.x*m.fx;
+    
+    if right
+    m.w=(pp.w-p.x)*m.fw;
+    m.x=(pp.w-p.x)*m.fx;
+     
+}
+
+if corner=down
+{
+	if top
+	m.h=(p.h+p.y)*m.fh;
+    m.y=(p.h+p.y)*m.fy;
+    
+	if down
+	m.h=(pp.h-p.y-p.h)*m.fh;
+	m.y=(pp.h-p.y-p.h)*m.fy;
+    
+}
+
+if corner=right
+{
+	if left
+	m.w=(p.w+p.w)*m.fw
+	m.x=(p.w+p.x)*m.fx
+	
+	if right
+	m.w=(pp.w-p.w-p.x)*m.fw
+    m.x=(pp.w-p.w-p.x)*m.fx
+	
+}
